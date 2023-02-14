@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(m.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 5em;
+}
+
+ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 3em;
+}
+
+nav ul li a {
+    text-decoration: none ;
+    color : white  ;
+    font-size: 1.1rem;
+}
+nav ul li a:hover {
+    text-decoration: 1.9px underline solid #5ec576;
+    
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    background-color: #5ec576;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 60px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.btn:hover ,
+.btn::after{
+    opacity: .8;
+    box-shadow: 2px 3px 2px black;
+    transition: all .4s ease-in-out;
+
+
+}
+
+.head{
+    margin : 8em 5em;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    animation-name: animate;
+    animation-duration: 5s ;
+    animation-iteration-count: infinite;
+
+    
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(20px);
+    }
+    25%{
+        transform: translateY(0);
+        
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    /* animation : animate 5s infinte ; */
+    text-decoration: 5px solid underline#5ec576;
+}
+
