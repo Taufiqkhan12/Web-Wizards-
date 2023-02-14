@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="wrapper hidden">
+        <div class="form-wrapper login">
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <form action="">
+                <h2>Login</h2>
+                <div class="input">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input">
+                    <input type="password" id="passcode" required>
+                    <label for="">Password</label>
+                    <span class="eye" onclick="myFuncttion()">
+                        <i id="open-eye" class="fa-solid fa-eye"></i>
+                        <i id="close-eye" class="fa-solid fa-eye-slash"></i>
+                    </span>
+                </div>
+                <div class="checkbox">
+                    <label for=""><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit">Login</button>
+                <!-- <div class="register-link">
+                    <p>Don't have an account? <a href="#" class="register">Register</a></p>
+                </div> -->
+            </form>
+        </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script>
+        function myFuncttion(){
+            var x = document.getElementById("passcode");
+            var y = document.getElementById('open-eye');
+            var z = document.getElementById("close-eye");
+
+            if (x.type === 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else {
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
