@@ -20,6 +20,7 @@
     width: 80%;
     margin : 3em auto;
     border: 2px solid #5ec576;
+    border-radius: 10px;
 }
 
 .flex {
@@ -46,10 +47,12 @@
 
 .chat-head{
     margin: 2em auto;
-    background-color: #5ec576;
+    background-color: #ddffe7;
     width: 250px;
     border-radius: 10px ;
     text-align: center;
+    font-size: 13px;
+    padding: 5px;
 }
 
 .sub-left{
@@ -57,7 +60,7 @@
     flex-direction: column;
     margin: 0 1em;
     padding: .3em 2em;
-    background-color: #5ec576;
+    background-color: #a2ffb7;
     width: 300px;
     border-radius: 5px 20px 20px 5px;
 
@@ -84,6 +87,9 @@
     position: relative;
     right: -500px;
     border: 1px solid grey ;
+    padding: 1em;
+    font-size: 15px;
+    outline: none;
 }
 
 .send {
@@ -96,6 +102,11 @@
     border-radius: 30px ;
     border: none ;
     background-color: #5ec576;
+}
+
+.send:hover {
+    background: #50a964;
+    transition: .3s;
 }
 .msg{
     margin: 2em auto ;
