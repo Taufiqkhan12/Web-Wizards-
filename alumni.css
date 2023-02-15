@@ -33,6 +33,7 @@ nav ul li a {
     text-decoration: none ;
     margin-right: 1.5em;
     color: #5ec576;
+    font-size: 1.1rem;
     
 }
 
@@ -75,4 +76,13 @@ nav ul li a::after{
     border: none ;
     box-shadow: 2px 2px 1px black;
     background-color: #5ec576;
+    color: white;
+    font-weight: 700;
+}
+
+@media screen and (max-width:820px) {
+    .navbar ul{
+        display: grid;
+        grid-template-columns: auto ;
+    }
 }
